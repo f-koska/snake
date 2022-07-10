@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="sample.Controller"
+      prefHeight="600.0" prefWidth="400.0"
+      alignment="CENTER"
+      spacing="15"
+        style="-fx-background-color: rgba(208,222,239,0.67)">
+
+
+    <Label text="Snake">
+        <font>
+            <Font name="Verdana" size="45.0" />
+        </font></Label>
+
+    <Button fx:id="NewGame" text="New Game"
+            prefWidth="115"
+            prefHeight="45"
+            scaleShape="true"
+            onAction="#newGame">
+        <font>
+            <Font size="17"></Font>
+        </font>
+        <effect>
+                <InnerShadow choke="0.2" height="5.9" radius="37.5" width="146">
+                    <color>
+                        <Color red="0.42" green="0.08" blue="0.083" opacity="0.98"/>
+                    </color>
+                </InnerShadow>
+        </effect></Button>
+
+
+    <Button fx:id="HighScores" text="High Scores"
+            prefWidth="115"
+            prefHeight="45"
+            scaleShape="true"
+            onAction="#highScores">
+        <font>
+            <Font size="17"></Font>
+        </font>
+        <effect>
+            <InnerShadow choke="0.2" height="5.9" radius="37.5" width="146">
+                <color>
+                    <Color red="0.42" green="0.08" blue="0.083" opacity="0.98"/>
+                </color>
+            </InnerShadow>
+        </effect></Button>
+
+    <Button fx:id="Exit" text="Exit"
+            prefWidth="115"
+            prefHeight="45"
+            scaleShape="true"
+            onAction="#exit">
+    <font>
+        <Font size="17"></Font>
+    </font>
+    <effect>
+        <InnerShadow choke="0.2" height="5.9" radius="37.5" width="146">
+            <color>
+                <Color red="0.42" green="0.08" blue="0.083" opacity="0.98"/>
+            </color>
+        </InnerShadow>
+    </effect></Button>
+</VBox>
